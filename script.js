@@ -11,7 +11,7 @@ function calculate(){
 
     let price = Number(document.getElementById("cost").value);
 
-    let name = document.getElementById("nam").value;
+    const nam = document.getElementById("nam").value;
 
     var education = Number(document.getElementById("education").value);
     price *= education;
@@ -37,9 +37,9 @@ function calculate(){
     price += getCheckboxValuesForLoop(reputation);
     
 
-    const text = document.getElementById("text");
+    const loveletter = document.getElementById("text").value;
 
 
-    document.getElementById("submit").innerHTML = `The price for your bride is ${nam}.,${price}.,${text}.`;
+    document.getElementById("submit").innerHTML = `The price for your bride is ${nam} ,${price} ,${loveletter}`;
     console.log(price);
 }
